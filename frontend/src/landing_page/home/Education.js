@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const Education = () => {
   return (
@@ -12,13 +13,13 @@ const Education = () => {
           <div>
             <p>Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading.</p>
             <div>
-              <a className="text-decoration-none">Varsity <i class="fa-solid fa-arrow-right"></i></a>
+              <Link to={""} className="text-decoration-none">Varsity <i class="fa-solid fa-arrow-right"></i></Link>
             </div>
           </div>
           <div>
             <p>Trading Q&A, the most active trading and investment community in India for all your market related queries.</p>
             <div>
-              <a className="text-decoration-none">Trading Q&A <i class="fa-solid fa-arrow-right"></i></a>
+              <Link to={""} className="text-decoration-none">Trading Q&A <i class="fa-solid fa-arrow-right"></i></Link>
             </div>
           </div>
         </div>

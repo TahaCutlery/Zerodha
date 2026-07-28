@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const stats = () => {
   return (
@@ -28,8 +29,8 @@ const stats = () => {
         <div className="col-6 mx-5">
           <img src="media/images/ecosystem.png" className="w-100" />
           <div className="mt-5 d-flex justify-content-around w-75 mx-5">
-            <div><a src="#" className="text-decoration-none">Explore our products <i class="fa-solid fa-arrow-right"></i></a></div>
-            <div><a src="#" className="text-decoration-none">Try Kite demo <i class="fa-solid fa-arrow-right"></i></a></div>
+            <div><Link to={""} src="#" className="text-decoration-none">Explore our products <i class="fa-solid fa-arrow-right"></i></Link></div>
+            <div><Link to={""} src="#" className="text-decoration-none">Try Kite demo <i class="fa-solid fa-arrow-right"></i></Link></div>
           </div>
         </div>
       </div>
