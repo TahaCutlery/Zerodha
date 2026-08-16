@@ -1,2 +1,2 @@
-let isProduction = false;
+let isProduction = true;
 module.exports.server_url = isProduction ? "https://zerodha-rdn1.onrender.com" : "http://localhost:3000";
