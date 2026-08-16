@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="container p-5 mb-5">
       <div className="row">
-        <img src="media/images/homeHero.png"/>
+        <img src="media/images/homeHero.png" alt="Home Hero" />
       </div>
       <div className="row text-center mt-5">
         <h1>Invest in everything</h1>

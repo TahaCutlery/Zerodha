@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { server_url } from "../serverUrl";
 
 const Summary = () => {
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        if (!token) return;
+        const response = await fetch(`${server_url}/me`, {
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
+        });
+        if (response.ok) {
+          const data = await response.json();
+          if (data?.user?.name) {
+            setUserName(data.user.name);
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch user in Summary:", error?.message);
+      }
+    };
+    fetchUser();
+  }, []);
+
   return (
     <>
       <div className="username">
-        <h6>Hi, User!</h6>
+        <h6>Hi, {userName || "User"}!</h6>
         <hr className="divider" />
       </div>
 

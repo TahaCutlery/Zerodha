@@ -5,10 +5,12 @@ import Stats from './stats';
 import Pricing from './Pricing';
 import Education from './Education';
 import OpenAccount from '../OpenAccount';
+import Navbar from '../Navbar';
 
 const HomePage = () => {
   return (
     <>
+     <Navbar />
         <Hero />
         <Awards />
         <Stats />

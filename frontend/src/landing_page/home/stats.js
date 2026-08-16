@@ -27,10 +27,10 @@ const stats = () => {
           </div>
         </div>
         <div className="col-6 mx-5">
-          <img src="media/images/ecosystem.png" className="w-100" />
+          <img src="media/images/ecosystem.png" className="w-100" alt="Ecosystem" />
           <div className="mt-5 d-flex justify-content-around w-75 mx-5">
-            <div><Link to={""} src="#" className="text-decoration-none">Explore our products <i class="fa-solid fa-arrow-right"></i></Link></div>
-            <div><Link to={""} src="#" className="text-decoration-none">Try Kite demo <i class="fa-solid fa-arrow-right"></i></Link></div>
+            <div><Link to={"/product"} className="text-decoration-none">Explore our products <i className="fa-solid fa-arrow-right"></i></Link></div>
+            <div><Link to={"/dashboard"} className="text-decoration-none">Try Kite demo <i className="fa-solid fa-arrow-right"></i></Link></div>
           </div>
         </div>
       </div>
