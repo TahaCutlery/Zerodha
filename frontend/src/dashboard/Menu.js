@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { server_url } from "../serverUrl";
 
@@ -7,7 +6,6 @@ const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [userName, setUserName] = useState("");
   const profileRef = useRef(null);
-  const [user, setUser] = useState();
   const navigate = useNavigate();
   const fetchUser = async () => {
     try {
